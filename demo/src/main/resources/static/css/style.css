@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff4b4b, #ff8f6b);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 320px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-img {
+    width: 100%;
+    height: 220px;
+    background-color: #ddd;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333;
+    margin: 0 0 5px 0;
+    font-size: 22px;
+}
+
+p {
+    color: #666;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-dislike {
+    background-color: #fff;
+    color: #ff4b4b;
+    border: 2px solid #ff4b4b;
+}
+
+.btn-dislike:hover {
+    background-color: #ffe6e6;
+    transform: scale(1.05);
+}
+
+.btn-like {
+    background-color: #ff4b4b;
+    color: white;
+}
+
+.btn-like:hover {
+    background-color: #e03e3e;
+    transform: scale(1.05);
+}
+
+.match-popup {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background: #4BB543;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}

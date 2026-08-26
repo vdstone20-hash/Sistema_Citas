@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Citas - Match</title>
+    <!-- Enlace al archivo CSS separado -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div id="matchPopup" class="match-popup">🔥 ¡Es un Match Exitoso!</div>
+
+    <div class="container">
+        <div id="card" class="card">
+            <div>
+                <img id="profile-img" class="profile-img" src="" alt="Foto de Perfil">
+                <h2 id="profile-name">Cargando...</h2>
+                <p id="profile-bio">Obteniendo ubicación y perfiles...</p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-dislike" onclick="registrarSwipe('dislike')">❌ Dislike</button>
+                <button class="btn btn-like" onclick="registrarSwipe('like')">❤️ Like</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript separado -->
+    <script src="/js/app.js"></script>
+</body>
+</html>
